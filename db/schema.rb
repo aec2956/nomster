@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_10_29_005704) do
+=======
+ActiveRecord::Schema.define(version: 2019_10_17_225624) do
+>>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_29_005704) do
     t.string "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+<<<<<<< HEAD
     t.integer "user_id"
     t.index ["user_id"], name: "index_places_on_user_id"
   end
@@ -35,6 +40,8 @@ ActiveRecord::Schema.define(version: 2019_10_29_005704) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+=======
+>>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
   end
 
 end
