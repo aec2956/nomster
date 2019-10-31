@@ -4,7 +4,6 @@ module.exports = function(api) {
   var isDevelopmentEnv = api.env('development')
   var isProductionEnv = api.env('production')
   var isTestEnv = api.env('test')
-
   if (!validEnv.includes(currentEnv)) {
     throw new Error(
       'Please specify a valid `NODE_ENV` or ' +
@@ -14,7 +13,6 @@ module.exports = function(api) {
         '.'
     )
   }
-
   return {
     presets: [
       isTestEnv && [
@@ -34,7 +32,6 @@ module.exports = function(api) {
           modules: false,
           exclude: ['transform-typeof-symbol']
         }
-<<<<<<< HEAD
       ],
       [
         require('@babel/preset-react').default,
@@ -42,8 +39,6 @@ module.exports = function(api) {
           development: isDevelopmentEnv || isTestEnv,
           useBuiltIns: true
         }
-=======
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
       ]
     ].filter(Boolean),
     plugins: [
@@ -76,15 +71,12 @@ module.exports = function(api) {
         {
           async: false
         }
-<<<<<<< HEAD
       ],
       isProductionEnv && [
         require('babel-plugin-transform-react-remove-prop-types').default,
         {
           removeImport: true
         }
-=======
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
       ]
     ].filter(Boolean)
   }

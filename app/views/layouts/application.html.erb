@@ -4,22 +4,16 @@
     <title>Nomster</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-
 <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
   <%= link_to 'Nomster', root_path, class: 'navbar-brand' %>
-
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
       <li class="nav-item">
         <%= link_to new_place_path, class: 'nav-link' do %>
@@ -28,7 +22,6 @@
         <% end %>
       </li>
     </ul>
-<<<<<<< HEAD
     <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item">
@@ -43,26 +36,15 @@
         </li>
       <% end %>
     </ul>
-
   </div>
 </nav>
-
 </nav>
-
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-
 <%= yield %>
-=======
-  </div>
-</nav>
-
-    <%= yield %>
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
-
   </body>
 </html>

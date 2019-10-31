@@ -1,11 +1,5 @@
 @import "bootstrap";
 @import "font-awesome";
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
-
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -17,22 +11,18 @@
   margin-bottom: 15px;
   padding: 20px;
 }
-
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
 }
-
 body {
   background: image_url('brickwall.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
-
 .navbar {
   background: image_url('dark_brick_wall.png');
   box-shadow: 0px 1px 3px #2a2a2a;
 }
-
 .navbar-inverse .navbar-brand {
   color: #E62E48;
   font-family: 'chunkfiveregular';
