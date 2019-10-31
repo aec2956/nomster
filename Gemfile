@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
 ruby '2.5.3'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use postgresql as the database for Active Record
@@ -21,18 +19,14 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
-
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -41,7 +35,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
@@ -49,35 +42,15 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
-
 gem 'jquery-rails'
-
-
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
-<<<<<<< HEAD
 gem 'simple_form'
 gem 'will_paginate', '~> 3.1.0'
 gem "font-awesome-rails"
 gem 'devise'
-=======
-
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
-
-  ## Gemfile for Rails 3+, Sinatra, and Merb
-<<<<<<< HEAD
-
-
-=======
-gem 'will_paginate', '~> 3.1.0'
-
-gem 'simple_form'
-
- gem "font-awesome-rails"
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
 end
