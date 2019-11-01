@@ -3,19 +3,14 @@
     <h1><%= place.name %></h1>
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
-<<<<<<< HEAD
+
 
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
-  </div>
 
-  <%= will_paginate @posts %> 
-
-=======
   </div>
 
   <%= will_paginate @posts %> 
   
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
 <% end %>
