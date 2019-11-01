@@ -1,9 +1,7 @@
 Rails.application.configure do
-<<<<<<< HEAD
    config.action_mailer.default_url_options = { host: 'ancient-lake-33769.herokuapp.com' }
-=======
   # Settings specified here will take precedence over those in config/application.rb.
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
+
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -113,9 +111,8 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
-<<<<<<< HEAD
-  end
+ 
   
-=======
+
 end
->>>>>>> 4ee3109cc31ac8e2a3478b5c8c9a92a145b02abc
+
