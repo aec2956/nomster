@@ -10,3 +10,9 @@
     font-style: normal;
 
 }
+
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: block;
+}
